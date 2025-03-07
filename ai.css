@@ -1,0 +1,250 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-image: url(foto/home.jpg); /* Dark Teal */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left ;
+    width: 100%;
+    height: 610px;
+    margin-top: -80px;
+}
+
+.navbar a.navbar-brand {
+    color: #fff !important;
+    font-size: 18px;
+    margin: 10px;;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #2b97c9, 0 0 30px rgb(216, 222, 252);
+}
+
+
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.nav-item {
+    margin: 7px; /* المسافة بين العناصر */
+}
+
+.nav-link {
+    color: #000; /* اللون الافتراضي للرابط */
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #0b3266; 
+    /* تغيير اللون عند التمرير */
+}
+#navbarNav{
+    margin-left: 970px;
+    margin-bottom: 40px; 
+    text-decoration: solid;
+}
+/* Home Section */
+.home {
+    background-color: #ffffff;
+    padding: 80px 0;
+    color: #333;
+    
+}
+a{
+    text-decoration: none;
+}
+.home h1{
+    font-size: 40px;
+    color: white;
+    margin-left: 830px;
+    margin-top: 100px;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #2b97c9, 0 0 30px rgb(216, 222, 252);
+}
+
+.home p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff;
+    max-width: 800px;
+    margin-left: 700px;
+    text-align: center;
+    width: 500px;
+    margin-top: 90px;
+    
+}
+
+
+/* Best AI Resources Section */
+.py-5.bg-lightgrey {
+    background-color: #f4f4f4;
+}
+
+#aiResources {
+    color: #0b3266;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 35px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 7px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    color: #0b3266;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.card-body a {
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    color: #0b3266;
+}
+
+/* Flexbox to arrange cards */
+.prodect {
+    display: flex;
+    margin: 7px;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap;
+}
+
+.prodect .card {
+    width: 23%; /* Make cards take 23% of the container width */
+}
+
+.prodect .card-body {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0b3266; /* Dark Teal */
+    color: white;
+    padding: 40px 0;
+    margin-top: 30px;
+   
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+footer a:hover {
+    color: #0b3266;
+}
+
+footer .social-icons i {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+footer .social-icons a:hover {
+    color: #0b3266;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .prodect .card {
+        width: 48%; /* Adjust width for smaller screens */
+    }
+
+    .prodect .card-body h5 {
+        font-size: 1.3rem;
+    }
+
+    .prodect .card-body p {
+        font-size: 0.9rem;
+    }
+}
+
+.bg-darkteal {
+    background-color: #0b3266; /* اللون الأخضر الداكن */
+}
+
+.bg-lightgrey {
+    background-color: #f4f4f4; /* اللون الرمادي الفاتح */
+}
+.row{
+    width: 50%;
+}
+.mb-0{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: -15px;
+}
+
