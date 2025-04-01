@@ -2,77 +2,51 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    line-height: 25px;
 }
-
-/* Navbar Styles */
-.navbar {
-    background-image: url(foto/home.jpg); /* Dark Teal */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:left ;
-    width: 100%;
-    height: 610px;
-    margin-top: -80px;
-}
-
-.navbar a.navbar-brand {
-    color: #fff !important;
-    font-size: 18px;
-    margin: 10px;;
-}
-
-.navbar .nav-link {
-    color: #fff !important;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-}
-
-.navbar .nav-link:hover {
+.logo{
+    margin: 10px;
     text-shadow: 0 0 10px #ffffff, 0 0 20px #2b97c9, 0 0 30px rgb(216, 222, 252);
+    margin-left: 35px;
 }
-
-
-
-.navbar-toggler-icon {
-    color: #fff;
+.logo a{
+    color: aliceblue;
 }
-.navbar-nav {
-    list-style: none;
+.collapse a{
+    color: aliceblue;
+    margin-right: 15px;
+}
+.collapse{
+    margin-right: 20px;
+}
+.container0{
+    font-size: 18px;
+    color: aliceblue;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 0;
+    width: 100%;
 }
-
-.nav-item {
-    margin: 7px; /* المسافة بين العناصر */
-}
-
-.nav-link {
-    color: #000; /* اللون الافتراضي للرابط */
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    color: #0b3266; 
-    /* تغيير اللون عند التمرير */
-}
-#navbarNav{
-    margin-left: 970px;
-    margin-bottom: 40px; 
-    text-decoration: solid;
+.collapse a:hover{
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #2b97c9, 0 0 30px rgb(216, 222, 252);
 }
 /* Home Section */
 .home {
     background-color: #ffffff;
-    padding: 80px 0;
+    padding: 20px 0;
     color: #333;
-    
+    background-image: url(foto/home.jpg); /* Dark Teal */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left ;
+    height: 660px;
 }
 a{
     text-decoration: none;
@@ -80,8 +54,6 @@ a{
 .home h1{
     font-size: 40px;
     color: white;
-    margin-left: 830px;
-    margin-top: 100px;
     text-shadow: 0 0 10px #ffffff, 0 0 20px #2b97c9, 0 0 30px rgb(216, 222, 252);
 }
 
@@ -89,25 +61,37 @@ a{
     font-size: 1.1rem;
     line-height: 1.8;
     color: #ffffff;
-    max-width: 800px;
-    margin-left: 700px;
-    text-align: center;
-    width: 500px;
-    margin-top: 90px;
-    
+    max-width: 600px;
+    margin-top: 70px;
 }
-
-
+.too{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    margin-top: 130px;
+}
+.text-container{
+    width: 50%;
+}
+.text-container2{
+    width: 50%;
+}
 /* Best AI Resources Section */
 .py-5.bg-lightgrey {
     background-color: #f4f4f4;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#aiResources {
-    color: #0b3266;
+h2 {
+    color:  #00568f;
     font-size: 2rem;
     text-align: center;
-    margin-top: -40px;
+    margin-top: -20px;
     margin-bottom: 35px;
 }
 
@@ -117,6 +101,7 @@ a{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     margin-left: 7px;
+    min-width: 260px;
 }
 
 .card:hover {
@@ -140,7 +125,7 @@ a{
 
 .card-body h5 {
     font-size: 1.5rem;
-    color: #0b3266;
+    color: #00568f
 }
 
 .card-body p {
@@ -153,7 +138,7 @@ a{
 }
 
 .card-body a:hover {
-    color: #0b3266;
+    color:  #00568f
 }
 
 /* Flexbox to arrange cards */
@@ -175,10 +160,10 @@ a{
 
 /* Footer Styles */
 footer {
-    background-color: #0b3266; /* Dark Teal */
+    background-color: #00568f; /* Dark Teal */
     color: white;
     padding: 40px 0;
-    margin-top: 30px;
+
    
 }
 
@@ -197,7 +182,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #0b3266;
+    color:   #00568f
 }
 
 footer .social-icons i {
@@ -206,8 +191,7 @@ footer .social-icons i {
 }
 
 footer .social-icons a:hover {
-    color: #0b3266;
-}
+    color:  #00568f;}
 
 footer p {
     font-size: 0.9rem;
@@ -233,7 +217,7 @@ footer p {
 }
 
 .bg-darkteal {
-    background-color: #0b3266; /* اللون الأخضر الداكن */
+    background-color: #00568f; /* اللون الأخضر الداكن */
 }
 
 .bg-lightgrey {
@@ -247,4 +231,318 @@ footer p {
     margin: 10px;
     margin-bottom: -15px;
 }
+/* From Uiverse.io by ashwin_5681 */ 
+.cardd {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+  
+    /* إضافة هذه الخصائص لتوسيط النص */
+    display: flex;
+    flex-direction: column; /* ترتيب النص عموديًا */
+    justify-content: center; /* توسيط النص عموديًا */
+    align-items: center; /* توسيط النص أفقيًا */
+  }
+  
+  .cardd p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #00698f, 0 0 30px rgb(216, 222, 252);
+  }
+  
+  
+  .slider {
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent); 
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .slider .list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity) + 150px); /* إضافة مساحة بين العناصر */
+    position: relative;
+  }
+  .slider .list .item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 20s linear infinite; /* زيادة الوقت إلى 20 ثانية */
+    transition: filter 0.5s;
+    animation-delay: calc(
+      (20s / var(--quantity)) * (var(--position) - 1) - 20s
+    ) !important; /* تعديل هنا أيضاً */
+  }
+  .slider .list .item img {
+    width: 100%;
+  }
+  
+  @keyframes autoRun {
+    from {
+      left: 100%;
+    }
+    to {
+      left: calc(var(--width) * -1);
+    }
+  }
+  .slider:hover .item {
+    animation-play-state: paused !important;
+    filter: grayscale(1);
+  }
+  .slider .item:hover {
+    filter: grayscale(0);
+  }
+  .slider[reverse="true"] .item {
+    animation: reversePlay 10s linear infinite;
+  }
+  @keyframes reversePlay {
+    from {
+      left: calc(var(--width) * -1);
+    }
+    to {
+      left: 100%;
+    }
+  }
+  h5{
+    margin-bottom: 16px;
+  }
+  .form-container {
+    width: 320px;
+    border-radius: 0.75rem;
+    background-color: #f7f7f7; /* light gray background */
+    padding: 2rem;
+    color: #333; /* dark gray text */
+    border: #0b3266 1px solid;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #00698f; /* blue title */
+  }
+  
+  .form {
+    margin-top: 1.5rem;
+  }
+  
+  .input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .input-group label {
+    display: block;
+    color: #666; /* dark gray label */
+    margin-bottom: 4px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #ccc; /* light gray border */
+    outline: 0;
+    background-color: #f7f7f7; /* light gray background */
+    padding: 0.75rem 1rem;
+    color: #333; /* dark gray text */
+  }
+  
+  .input-group input:focus {
+    border-color: #00698f; /* blue border on focus */
+  }
+  
+  .forgot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #666; /* dark gray forgot password */
+    margin: 8px 0 14px 0;
+  }
+  
+  .forgot a,
+  .signup a {
+    color: #333; /* dark gray link */
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot a:hover,
+  .signup a:hover {
+    text-decoration: underline #00698f; /* blue underline on hover */
+  }
+  
+  .sign {
+    display: block;
+    width: 100%;
+    background-color: #00698f; /* blue button */
+    padding: 0.75rem;
+    text-align: center;
+    color: #fff; /* white text */
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+  }
+  
+  .social-message {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  
+  .line {
+    height: 1px;
+    flex: 1 1 0%;
+    background-color: #ccc; /* light gray line */
+  }
+  
+  .social-message .message {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #666; /* dark gray social message */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons .icon {
+    border-radius: 0.125rem;
+    padding: 0.75rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+  }
+  
+  .social-icons .icon svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    fill: #fff; /* white icon */
+  }
+  
+  .signup {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #666; /* dark gray signup */
+  }
+  .about1{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 20px 40px;
 
+  }
+  .righta{
+    width: 65%;
+    margin-right: 140px;
+    padding: 20px;
+    background-color:  #00698fb7;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 40px;
+  }
+  .lefta{
+    width: 35%
+  }
+  .about{
+    background-color:  #00698f3d;
+    padding:60px
+  }
+  @media (max-width: 1024px) {
+    .container0 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    .collapse {
+        margin-right: 0;
+    }
+    .prodect .card{
+      width: 350px;
+    }
+}
+@media  (max-width: 1150px){
+  .prodect .card{
+    width: 320px;
+  }
+}
+@media (max-width: 768px) {
+    .too {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-container, .text-container2 {
+        width: 100%;
+    }
+    .home {
+        height: auto;
+        padding: 40px 20px;
+    }
+    .home h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .home p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .prodect {
+        flex-direction: column;
+        align-items: center;
+    }
+    .prodect .card {
+        width: 90%;
+        margin-bottom: 20px;
+  
+    }
+    .about1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .righta, .lefta {
+        width: 90%;
+        margin-right: 0;
+    }
+    .righta {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+    .prodect .card-body h5 {
+        font-size: 1.1rem;
+    }
+    .prodect .card-body p {
+        font-size: 0.8rem;
+    }
+    footer h5, footer a {
+        font-size: 1rem;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
+}
