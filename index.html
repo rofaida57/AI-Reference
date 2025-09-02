@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link href="./css/main.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="ai.css" />
-
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <link rel="icon" href="foto/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-    <title>AI Reference</title>
-  </head>
-
-  <body>
-    <section class="home" id="packages">
-      <div class="container0">
-          <div class="logo">
-          <a class="navbar-brand" href="index.html">AI Reference</a>
-          </div>
-          <!-- القائمة مع الروابط -->
-          <div class="collapse" id="navbarNav">
-            <nav>
-              <a class="nav-link" href="#packages">Home</a>
-              <a class="nav-link" href="#tacticalConcepts">The Best</a>
-              <a class="nav-link" href="#nav-link">Sections</a>
-              <a class="nav-link" href="#about">About</a>
-            </nav>
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A comprehensive collection of AI resources, including tools, guides, and educational content to empower your journey in artificial intelligence." />
+  <meta name="keywords" content="Artificial Intelligence, AI Tools, AI Tutorials, AI Courses, Machine Learning Resources, AI Guide" />
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Explore the Best AI Resources" />
+  <meta property="og:description" content="Find top AI tools, tutorials, and courses to master artificial intelligence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://website.com" />
+  <meta property="og:image" content="https://website.com/image.jpg" />
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="./style.css" />
+  <link href="./css/main.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="ai.css" />
+  
+  <!-- Boxicons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="foto/favicon-16x16.png" type="image/x-icon">
+  
+  <title>AI Reference | Your Guide to Artificial Intelligence</title>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="home" id="packages">
+    <div class="container0">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="navbar-brand" href="index.html" aria-label="AI Reference Homepage">AI Reference</a>
       </div>
+      
+      <!-- Navigation Menu -->
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="collapse" id="navbarNav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#packages">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tacticalConcepts">The Best</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nav-link">Sections</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+      </nav>
     </div>
-      <div class="too">
-        <div class="text-container2">
-
-        </div>
-      <!-- Content Section -->
+    
+    <div class="too">
+      <div class="text-container2">
+        <!-- Empty container, possibly for additional content -->
+      </div>
+    
+      <!-- Main Content Section -->
       <div class="text-container">
         <h1>AI Reference</h1>
         <p>"AI Reference is a comprehensive website that gathers essential 
@@ -46,318 +67,305 @@
         focus on artificial intelligence and cutting-edge technologies 
         shaping the future."</p>
       </div>
+    </div>
+  </header>
+  
+  <!-- AI Resources Section -->
+  <main>
+    <section class="py-5 bg-lightgrey" id="tacticalConcepts" aria-labelledby="aiResources">
+      <h2 class="text-center" id="aiResources">Best AI Resources</h2>
+      <div class="container">
+        <!-- First row of AI resource cards -->
+        <div class="prodect">
+          <!-- OpenAI Card -->
+          <article class="card ai-card">
+            <a href="https://www.openai.com" target="_blank" rel="noopener noreferrer">
+              <img src="foto/open-ia.jpeg" class="card-img-top imgs" alt="OpenAI logo" loading="lazy" width="260" height="200" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title fw-bolder text-center">OpenAI</h3>
+              <p class="card-text text-center">A leader in artificial intelligence research and development.</p>
+            </div>
+          </article>
+          
+          <!-- TensorFlow Card -->
+          <article class="card ai-card">
+            <a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">
+              <img src="foto/tf.webp" class="card-img-top imgs" alt="TensorFlow logo" loading="lazy" width="260" height="200" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title fw-bolder text-center">TensorFlow</h3>
+              <p class="card-text text-center">Open-source library for machine learning and neural networks.</p>
+            </div>
+          </article>
+          
+          <!-- IBM Watson Card -->
+          <article class="card ai-card">
+            <a href="https://www.ibm.com/watson" target="_blank" rel="noopener noreferrer">
+              <img src="foto/ibm.jpeg" class="card-img-top imgs" alt="IBM Watson logo" loading="lazy" width="260" height="200" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title fw-bolder text-center">IBM Watson</h3>
+              <p class="card-text text-center">A powerful AI platform that helps businesses to make data-driven decisions.</p>
+            </div>
+          </article>
+          
+          <!-- DeepMind Card -->
+          <article class="card ai-card">
+            <a href="https://deepmind.com" target="_blank" rel="noopener noreferrer">
+              <img src="foto/dm.webp" class="card-img-top imgs" alt="DeepMind logo" loading="lazy" width="260" height="200" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title fw-bolder text-center">DeepMind</h3>
+              <p class="card-text text-center">A leader in artificial intelligence research, developing cutting-edge AI technologies.</p>
+            </div>
+          </article>
+        </div>
+        
+        <!-- Second row of AI resource cards -->
+        <div class="prodect">
+          <!-- Microsoft AI Card -->
+          <article class="card ai-card">
+            <a href="https://www.microsoft.com/en-us/ai" target="_blank" rel="noopener noreferrer">
+              <img src="foto/mai.jpeg" class="card-img-top imgs" alt="Microsoft AI logo" loading="lazy" width="260" height="200" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title fw-bolder text-center">Microsoft AI</h3>
+              <p class="card-text text-center">A suite of AI tools and services designed for developers and businesses.</p>
+            </div>
+          </article>
+          
+          <!-- Google AI Card -->
+          <article class="card ai-card">
+            <a href="https://www.google.com/ai" target="_blank" rel="noopener noreferrer">
+              <img src="foto/gai.jpeg" class="card-img-top imgs" alt="Google AI logo" loading="lazy" width="260" height="200" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title fw-bolder text-center">Google AI</h3>
+              <p class="card-text text-center">Google's AI research and tools, pushing the boundaries of AI across various domains.</p>
+            </div>
+          </article>
+          
+          <!-- Amazon AI Card -->
+          <article class="card ai-card">
+            <a href="https://aws.amazon.com/machine-learning/" target="_blank" rel="noopener noreferrer">
+              <img src="foto/amazon.jpg" class="card-img-top imgs" alt="Amazon AI logo" loading="lazy" width="260" height="200" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title fw-bolder text-center">Amazon AI</h3>
+              <p class="card-text text-center">Amazon's suite of machine learning tools, helping businesses integrate AI seamlessly.</p>
+            </div>
+          </article>
+          
+          <!-- NVIDIA AI Card -->
+          <article class="card ai-card">
+            <a href="https://www.nvidia.com/en-us/ai/" target="_blank" rel="noopener noreferrer">
+              <img src="foto/nivada.webp" class="card-img-top imgs" alt="NVIDIA AI logo" loading="lazy" width="260" height="200" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title fw-bolder text-center">NVIDIA AI</h3>
+              <p class="card-text text-center">NVIDIA's AI technologies and solutions for high-performance computing and deep learning.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
     
-    </div>
-    </section>
-    <br><br><br>
-    <section class="py-5 bg-lightgrey" id="tacticalConcepts">
-        <h2 class="text-center" id="aiResources">Best AI Resources</h2>
-        <div class="container">
-            <div class="prodect">
-                <!-- AI Resource 1 -->
-                <div class="card ai-card">
-                    <a href="https://www.openai.com" target="_blank">
-                        <img src=" foto/open ia.jpeg" class="card-img-top imgs" alt="OpenAI" />
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-center">OpenAI</h5>
-                        <p class="card-text text-center">A leader in artificial intelligence research and development.</p>
-                    </div>
-                </div>
-                <!-- AI Resource 2 -->
-                <div class="card ai-card">
-                    <a href="https://www.tensorflow.org" target="_blank">
-                        <img src="foto/tf.webp" class="card-img-top imgs" alt="TensorFlow" />
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-center">TensorFlow</h5>
-                        <p class="card-text text-center">Open-source library for machine learning and neural networks.</p>
-                    </div>
-                </div>
-                <!-- AI Resource 3 -->
-                <div class="card ai-card">
-                    <a href="https://www.ibm.com/watson" target="_blank">
-                        <img src="foto/ibm.jpeg" class="card-img-top imgs" alt="IBM Watson" />
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-center">IBM Watson</h5>
-                        <p class="card-text text-center">A powerful AI platform that helps businesses to make data-driven decisions.</p>
-                    </div>
-                </div>
-                <!-- AI Resource 4 -->
-                <div class="card ai-card">
-                    <a href="https://deepmind.com" target="_blank">
-                        <img src="foto/dm.webp" class="card-img-top imgs" alt="DeepMind" />
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-center">DeepMind</h5>
-                        <p class="card-text text-center">A leader in artificial intelligence research, developing cutting-edge AI technologies.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Second row of AI Resources -->
-            <div class="prodect">
-                <!-- AI Resource 5 -->
-                <div class="card ai-card">
-                    <a href="https://www.microsoft.com/en-us/ai" target="_blank">
-                        <img src="foto/mai.jpeg" class="card-img-top imgs" alt="Microsoft AI" />
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-center">Microsoft AI</h5>
-                        <p class="card-text text-center">A suite of AI tools and services designed for developers and businesses.</p>
-                    </div>
-                </div>
-                <!-- AI Resource 6 -->
-                <div class="card ai-card">
-                    <a href="https://www.google.com/ai" target="_blank">
-                        <img src="foto/gai.jpeg" class="card-img-top imgs" alt="Google AI" />
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-center">Google AI</h5>
-                        <p class="card-text text-center">Google’s AI research and tools, pushing the boundaries of AI across various domains.</p>
-                    </div>
-                </div>
-                <div class="card ai-card">
-                    <a href="https://aws.amazon.com/machine-learning/" target="_blank">
-                        <img src="foto/amazon.jpg" class="card-img-top imgs" alt="Amazon AI" />
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-center">Amazon AI</h5>
-                        <p class="card-text text-center">Amazon's suite of machine learning tools, helping businesses integrate AI seamlessly.</p>
-                    </div>
-                </div>
-                <div class="card ai-card">
-                    <a href="https://www.nvidia.com/en-us/ai/" target="_blank">
-                        <img src="foto/nivada.webp" class="card-img-top imgs" alt="NVIDIA AI" />
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-center">NVIDIA AI</h5>
-                        <p class="card-text text-center">NVIDIA's AI technologies and solutions for high-performance computing and deep learning.</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <br><br><br><br>
-   <section class="nav-link" id="nav-link"><!-- From Uiverse.io by ashwin_5681 --> 
-    <h2>sections</h2>
-    <div
-      class="slider"
-      style="--width: 200px;
-        --height: 200px;
-        --quantity: 9;"
-    >
-      <div class="list" >
+    <!-- Sections Slider -->
+    <!-- Sections Slider -->
+<section class="nav-link-section" id="nav-link" aria-labelledby="sectionsHeading">
+  <div class="container">
+    <h2 id="sectionsHeading">sections</h2>
+    <!-- Slider component with cards for different sections -->
+    <div class="slider" style="--width: 200px; --height: 200px; --quantity: 9;">
+      <div class="list">
+        <!-- Healthcare Section Card -->
         <div class="item" style="--position: 1">
-          <div
-            class="cardd"
-            style="background: linear-gradient(to right,#0099c4,  #00568f)"
-          >
+          <div class="cardd" style="background: linear-gradient(to right, #0099c4, #00568f)">
            <a href="files/Healthcare.html"> <p>Healthcare</p></a>
-            
           </div>
         </div>
-        <div class="item" style="--position: 2">
-          <div
-            class="cardd"
-            style="background: linear-gradient(to right,#0099c4,  #00568f)"
-          >
-            <a href="files/TradingView,html"><p>TradingView</p></a>
-            
-           
-          </div>
-        </div>
-        <div class="item" style="--position: 3">
-          <div
-            class="cardd"
-            style="background: linear-gradient(to right, #0099c4,  #00568f)"
-          >
-            <a href="files/Financial Sector.html"><p>Financial Sector</p></a>
-           
-          </div>
-        </div>
-        <div class="item" style="--position: 4">
-          <div
-            class="cardd"
-            style="background: linear-gradient(to right, #0099c4,  #00568f)"
-          >
-            <a href="files/Content Creation.html"><p>Content Creation</p></a>
-            
-          </div>
-        </div>
-        <div class="item" style="--position: 5">
-          <div
-            class="cardd"
-            style="background: linear-gradient(to right, #0099c4,  #00568f)"
-          >
-            <a href="files/Design and Decoration.html"> <p>Design and Decoration</p></a>
-            
-          </div>
-        </div>
-        <div class="item" style="--position: 6">
-          <div
-            class="cardd"
-            style="background: linear-gradient(to right,#0099c4,  #00568f)">
-            <a href="files/Programming.html"><p>Programming</p></a>
         
+        <!-- TradingView Section Card -->
+        <div class="item" style="--position: 2">
+          <div class="cardd" style="background: linear-gradient(to right, #0099c4, #00568f)">
+            <a href="files/TradingView.html"><p>TradingView</p></a>
           </div>
         </div>
+        
+        <!-- Financial Sector Section Card -->
+        <div class="item" style="--position: 3">
+          <div class="cardd" style="background: linear-gradient(to right, #0099c4, #00568f)">
+            <a href="files/Financial Sector.html"><p>Financial Sector</p></a>
+          </div>
+        </div>
+        
+        <!-- Content Creation Section Card -->
+        <div class="item" style="--position: 4">
+          <div class="cardd" style="background: linear-gradient(to right, #0099c4, #00568f)">
+            <a href="files/Content Creation.html"><p>Content Creation</p></a>
+          </div>
+        </div>
+        
+        <!-- Design and Decoration Section Card -->
+        <div class="item" style="--position: 5">
+          <div class="cardd" style="background: linear-gradient(to right, #0099c4, #00568f)">
+            <a href="files/Design and Decoration.html"> <p>Design and Decoration</p></a>
+          </div>
+        </div>
+        
+        <!-- Programming Section Card -->
+        <div class="item" style="--position: 6">
+          <div class="cardd" style="background: linear-gradient(to right, #0099c4, #00568f)">
+            <a href="files/Programming.html"><p>Programming</p></a>
+          </div>
+        </div>
+        
+        <!-- Authorship Section Card -->
         <div class="item" style="--position: 7">
-          <div
-            class="cardd"
-            style="background: linear-gradient(to right, #0099c4,  #00568f)"
-          >
+          <div class="cardd" style="background: linear-gradient(to right, #0099c4, #00568f)">
             <a href="files/Authorship.html"><p>Authorship</p></a>
-            
           </div>
         </div>
+        
+        <!-- Mathematics Section Card -->
         <div class="item" style="--position: 8">
-          <div
-            class="cardd"
-            style="background: linear-gradient(to right,#0099c4,  #00568f)"
-          >
+          <div class="cardd" style="background: linear-gradient(to right, #0099c4, #00568f)">
             <a href="files/mat.html"><p>Mathematics</p></a>
-            
           </div>
         </div>
+        
+        <!-- Chat and Problem Solving Section Card -->
         <div class="item" style="--position: 9">
-          <div
-            class="cardd"
-            style="background: linear-gradient(to right,#0099c4,  #00568f)"
-          >
+          <div class="cardd" style="background: linear-gradient(to right, #0099c4, #00568f)">
             <a href="files/Chat and Problem Solving.html"><p>Chat and Problem Solving</p></a>
-            
           </div>
         </div>
       </div>
     </div>
-    </section>
-    <section class="about" id="about">
-      <h2>AboutUs</h2>
-      <div class="about1">
-      <div class="righta">
-        We are a scientific club aimed at enhancing culture
-        and knowledge in various scientific fields. We strive
-        to provide an environment that encourages learning and 
-        critical thinking by organizing workshops, lectures, 
-        and distinguished training courses. We believe in the 
-        importance of continuous development and seek to provide 
-        opportunities for learning and growth for all our members. 
-        Join us and explore a world of knowledge and scientific 
-        challenges that contribute to developing your skills and 
-        increasing your understanding of science. Subscribe with 
-        us now and be part of our scientific community!
-      </div>
-      <div class="lefta">
-        
-        <div class="form-container">
-        <p class="title">Login</p>
-        <form class="form">
-          <div class="input-group">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="" />
+  </div>
+</section>
+    
+    <!-- About Us Section -->
+    <section class="about" id="about" aria-labelledby="aboutHeading">
+      <div class="container">
+        <h2 id="aboutHeading">About Us</h2>
+        <div class="about1">
+          <!-- About Us Text Content -->
+          <div class="righta">
+            <p>We are a scientific club aimed at enhancing culture and knowledge in various scientific fields. We strive to provide an environment that encourages learning and critical thinking by organizing workshops, lectures, and distinguished training courses. We believe in the importance of continuous development and seek to provide opportunities for learning and growth for all our members. Join us and explore a world of knowledge and scientific challenges that contribute to developing your skills and increasing your understanding of science. Subscribe with us now and be part of our scientific community!</p>
           </div>
-          <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="" />
-            <div class="forgot">
-              <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+          
+          <!-- Login Form -->
+          <div class="lefta">
+            <div class="form-container">
+              <h3 class="title">Login</h3>
+              <form class="form" id="loginForm" onsubmit="return validateForm()">
+                <div class="input-group">
+                  <label for="username">Username</label>
+                  <input type="text" name="username" id="username" placeholder="" required />
+                </div>
+                <div class="input-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" placeholder="" required />
+                  <div class="forgot">
+                    <a rel="noopener noreferrer" href="#">Forgot Password?</a>
+                  </div>
+                </div>
+                <button type="submit" class="sign">Sign in</button>
+              </form>
+              
+              <!-- Social Login Options -->
+              <div class="social-message">
+                <div class="line"></div>
+                <p class="message">Login with social accounts</p>
+                <div class="line"></div>
+              </div>
+              <div class="social-icons">
+                <button aria-label="Log in with Google" class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                    <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
+                  </svg>
+                </button>
+                <button aria-label="Log in with Twitter" class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                    <path d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.279-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.634 0-6.579 2.945-6.579 6.58 0 0.516 0.059 1.016 0.172 1.495-5.463-0.255-10.315-2.869-13.566-6.833-0.571 0.961-0.891 2.085-0.891 3.277 0 2.28 1.161 4.287 2.916 5.465-1.076-0.031-2.088-0.329-2.971-0.821v0.083c0 3.181 2.26 5.833 5.26 6.437-0.551 0.145-1.131 0.229-1.732 0.229-0.417 0-0.839-0.041-1.242-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"></path>
+                  </svg>
+                </button>
+                <button aria-label="Log in with GitHub" class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                    <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.146 1.093-0.347 1.093-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.609 0.113 2.456 1.649 2.456 1.649 1.427 2.446 3.745 1.739 4.661 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.538 1.36 0.006 2.729 0.183 4.008 0.538 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+                  </svg>
+                </button>
+              </div>
+              <p class="signup">
+                Don't have an account?
+                <a rel="noopener noreferrer" href="#" class="">Sign up</a>
+              </p>
             </div>
           </div>
-          <button class="sign">Sign in</button>
-        </form>
-        <div class="social-message">
-          <div class="line"></div>
-          <p class="message">Login with social accounts</p>
-          <div class="line"></div>
+        </div>   
+      </div>
+    </section>      
+  </main>
+  
+  <!-- Footer Section -->
+  <footer class="bg-darkteal">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-md-4 mb-3">
+          <h5>Contact Us</h5>
+          <address>
+            <p>
+              Email: <a href="mailto:oskalo123321@gmail.com">oskalo123321@gmail.com</a>
+              <br><br>
+              Phone: <a href="tel:+1234567891">+123 456 7891</a><br><br>
+              Address: 123 AI Lane, Soccer City, SC 12345
+            </p>
+          </address>
         </div>
-        <div class="social-icons">
-          <button aria-label="Log in with Google" class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              class="w-5 h-5 fill-current"
-            ></svg>
-          </button>
-          <button aria-label="Log in with Twitter" class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              class="w-5 h-5 fill-current"
-            ></svg>
-          </button>
-          <button aria-label="Log in with GitHub" class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              class="w-5 h-5 fill-current"
-            ></svg>
-          </button>
+  
+        <!-- Social Media Links -->
+        <div class="col-md-4 mb-3" class="bb">
+          <h5>Follow Us</h5>
+          <div class="social-links">
+            <a href="https://facebook.com" class="text-white me-3" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="bx bxl-facebook fs-3"></i>
+            </a>
+            <a href="https://twitter.com" class="text-white me-3" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <i class="bx bxl-twitter fs-3"></i>
+            </a>
+            <a href="https://instagram.com" class="text-white" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="bx bxl-instagram fs-3"></i>
+            </a>
+          </div>
         </div>
-        <p class="signup">
-          Don't have an account?
-          <a rel="noopener noreferrer" href="#" class="">Sign up</a>
+        
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#packages">Home</a></li>
+            <li><a href="#tacticalConcepts">Best AI Resources</a></li>
+            <li><a href="#nav-link">Sections</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Copyright Notice -->
+      <div class="text-center mt-3">
+        <p class="mb-0">
+          &copy; 2025 AI Reference. All Rights Reserved. Created by Bouchama Rofaida
         </p>
       </div>
     </div>
-  </div>   
-    </section>      
-         
-
-
-
-
-      
-      <footer class="bg-darkteal text-white py-4" class="aboutUs.html">
-        <div class="container">
-          <div class="row">
-            <!-- Contact Info -->
-            <div class="col-md-4 mb-3">
-              <h5>Contact Us</h5>
-              <p>
-                Email:
-    
-                  iareference@gmail.com
-                <br /><br>
-                Phone: +123 456 7891<br /><br>
-                Address: 123 ai Lane, Soccer City, SC 12345
-              </p>
-            </div>
+  </footer>
   
-            <!-- Social Media -->
-
-            <div class="col-md-4 mb-3" class="bb">
-              
-              <a
-                href="https://facebook.com"
-                class="text-white me-3"
-                target="_blank"
-              >
-                <i class="bx bxl-facebook fs-3"></i>
-              </a>
-              <a
-                href="https://twitter.com"
-                class="text-white me-3"
-                target="_blank"
-              >
-                <i class="bx bxl-twitter fs-3"></i>
-              </a>
-              <a href="https://instagram.com" class="text-white" target="_blank">
-                <i class="bx bxl-instagram fs-3"></i>
-              </a>
-            </div>
-          </div>
-          <div class="text-center mt-3">
-            <p class="mb-0">
-              &copy; 2025 Tactical AI Reference. All Rights Reserved. Followed by Bouchama Rofaida
-            </p>
-          </div>
-        </div>
-      </footer>
-    
-    <script src="script.js"></script>
-        
+  <!-- JavaScript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
